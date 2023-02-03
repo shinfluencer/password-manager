@@ -4,6 +4,7 @@ import random
 import pyperclip
 import json
 
+
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -32,6 +33,7 @@ def generate_password():
     pyperclip.copy(password)
     password_entry.delete(0, tkinter.END)
     password_entry.insert(tkinter.END, string=password)
+
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def add_password():
@@ -65,7 +67,8 @@ def add_password():
             website_entry.delete(0, tkinter.END)
             email_entry.delete(0, tkinter.END)
             password_entry.delete(0, tkinter.END)
-            
+
+
 # ---------------------------- SEARCH WEBSITE ---------------------------- #
 def search_website():
     requested_website = website_entry.get().title()
